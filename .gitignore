@@ -1,2 +1,7 @@
-node_modules/*
-.idea/*
+# IDE-related stuff
+.idea/
+*.swp
+
+# Node modules
+node_modules/
+

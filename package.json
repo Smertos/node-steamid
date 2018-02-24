@@ -1,21 +1,38 @@
 {
-	"name": "steamid",
-	"version": "1.1.0",
-	"description": "Exposes a SteamID object class for easy SteamID management",
-	"keywords": ["steam", "steamid", "steam account"],
-	"homepage": "https://github.com/DoctorMcKay/node-steamid",
-	"bugs": {
-		"url": "https://github.com/DoctorMcKay/node-steamid/issues"
-	},
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/DoctorMcKay/node-steamid.git"
-	},
-	"dependencies": {
-		"cuint": "^0.2.1"
-	},
-	"scripts": {
-		"test": "node test.js"
-	}
+    "name": "steamid-ts",
+    "version": "1.1.0",
+    "description": "Exposes a SteamID object class for easy SteamID management",
+    "keywords": [
+        "steam",
+        "steamid",
+        "steam account"
+    ],
+    "homepage": "https://github.com/DoctorMcKay/node-steamid",
+    "bugs": {
+        "url": "https://github.com/DoctorMcKay/node-steamid/issues"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DoctorMcKay/node-steamid.git"
+    },
+    "dependencies": {
+        "cuint": "^0.2.1"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "test": "rollup -c && mocha"
+    },
+    "devDependencies": {
+        "@types/node": "^9.4.6",
+        "chai": "^4.1.2",
+        "mocha": "^5.0.1",
+        "rollup": "^0.55.5",
+        "rollup-plugin-commonjs": "^8.3.0",
+        "rollup-plugin-node-resolve": "^3.0.3",
+        "rollup-plugin-typescript": "^0.8.1",
+        "ts-loader": "^3.5.0",
+        "typescript": "^2.7.1",
+        "webpack": "^3.11.0"
+    }
 }
